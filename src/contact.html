@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link href="output.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="bg-white shadow-sm fixed w-full z-50">  
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="/images/8-removebg-preview.png" alt="Zirkona Dental Lab Logo" class="w-full h-60" />
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a data-i18n="home" href="index.html" class="text-gray-700 hover:text-brand-navy transition ">Home</a>
+                    <a data-i18n="about" href="about.html" class="text-gray-700 hover:text-brand-navy transition">About</a>
+                    <a data-i18n="services" href="services.html" class="text-gray-700 hover:text-brand-navy transition">Services</a>
+                    <a data-i18n="contact" href="contact.html" class="text-brand-gold hover:text-amber-700 transition">contact</a>
+                    <button id="langToggle" class="px-4 py-2 bg-brand-gold text-white rounded-lg hover:bg-brand-burgundy transition">
+        عربي
+    </button>
+                </div>
+
+                <button data-mobile-menu-toggle id="mobile-toggle"
+                    class="md:hidden flex items-center justify-center w-10 h-10 rounded-md  text-gray-700 hover:bg-gray-100 focus:outline-none transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" data-mobile-menu class="md:hidden hidden bg-white border-t border-gray-200 shadow-md ">
+            <div class="flex flex-col space-y-3 py-4 px-6">
+                    <a href="index.html" class="text-brand-gold hover:text-brand-navy transition ">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-brand-navy transition">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-brand-navy transition">Services</a>
+                    <a href="contact.html" class="text-brand-gold hover:text-amber-700 transition">contact</a>
+                                        <button id="langToggle" class="px-4 py-2 bg-brand-gold text-white rounded-lg hover:bg-brand-burgundy transition">
+        عربي
+    </button>
+            </div>
+        </div>
+    </nav>    
+        <!-- Hero Section with Breadcrumb -->
+    <div class="relative bg-black/90 text-white py-24 ">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-center bg-cover bg-fixed" style="background-image: url('/images/9.jpg');"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-2">
+                        <li class="inline-flex items-center">
+                            <a href="index.html" class="text-brand-gold hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span data-i18n="contact" class="ml-2 text-white font-medium">Contact</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                <h1 data-i18n="contactUs" class="text-5xl md:text-6xl font-bold mb-4">Contact Us</h1>
+                <p data-i18n="contactSubtitle" class="text-xl text-gray-200 max-w-2xl mx-auto">We are here to serve you</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-white to-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <span data-i18n="getInTouch" class="bg-brand-gold/90 text-brand-navy px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide mb-12">Get in Touch</span>
+                        <h2 data-i18n="workTogether" class="text-4xl md:text-5xl font-bold text-gray-900 mt-5 mb-4">Let's Work Together</h2>
+                        <p data-i18n="contactIntro" class="text-gray-600 text-lg leading-relaxed">
+                            Ready to elevate your dental practice? Contact us to discuss how Zirkona can support your
+                            clinical excellence.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-brand-green/10 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-i18n="locationLabel" class="font-bold text-gray-900 mb-1">Location</h4>
+                                <p class="text-gray-600"><a
+                  href="https://maps.google.com/?q=7613+طريق+ديراب+الفرعي،+المروة،+الرياض+14721+2285"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-muted-foreground hover:text-primary transition-colors block leading-relaxed"
+                  >7613 Dirab Branch Road, Al Marwah, Riyadh</a
+                ></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-brand-green/10 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-i18n="emailLabel" class="font-bold text-gray-900 mb-1">Email</h4>
+                                <p class="text-gray-600"><a
+                  href="mailto:ealowedan@ealowedan.com"
+                  class="text-muted-foreground hover:text-primary transition-colors block leading-relaxed"
+                  >ealowedan@ealowedan.com</a
+                ></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-brand-green/10 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-i18n="phoneLabel" class="font-bold text-gray-900 mb-1">Phone</h4>
+                                <a
+                    href="tel:0112712070"
+                    class="text-muted-foreground hover:text-primary transition-colors block text-lg"
+                    >0112712070</a
+                  >
+                  <a
+                    href="tel:0552868570"
+                    class="text-muted-foreground hover:text-primary transition-colors block text-lg"
+                    >0552868570</a
+                  >
+                  <a
+                    href="tel:0505108761"
+                    class="text-muted-foreground hover:text-primary transition-colors block text-lg"
+                    >0505108761</a
+                  >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-brand-gold/20">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label data-i18n="formName" class="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                            <input type="text" name="name" required
+                                class="w-full px-4 py-3 bg-brand-cream/50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-navy focus:border-transparent outline-none transition"
+                                placeholder="Dr. John Smith" />
+                        </div>
+
+                        <div>
+                            <label data-i18n="formEmail" class="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                            <input type="email" name="email" required
+                                class="w-full px-4 py-3 bg-brand-cream/50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-navy focus:border-transparent outline-none transition"
+                                placeholder="john@clinic.com" />
+                        </div>
+
+                        <div>
+                            <label data-i18n="formPhone" class="block text-sm font-semibold text-gray-900 mb-2">Phone Number</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-4 py-3 bg-brand-cream/50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-navy focus:border-transparent outline-none transition"
+                                placeholder="+966 50 000 0000" />
+                        </div>
+
+                        <div>
+                            <label data-i18n="formMessage" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                            <textarea name="message" required rows="4"
+                                class="w-full px-4 py-3 bg-brand-cream/50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-navy focus:border-transparent outline-none transition resize-none"
+                                placeholder="Tell us about your needs..."></textarea>
+                        </div>
+
+                        <button type="submit" data-i18n="formSend"
+                            class="w-full text-center inline-flex items-center justify-center bg-gradient-to-r from-brand-gold to-brand-green text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"
+          >
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="building-2" aria-hidden="true" class="lucide lucide-building-2 w-8 h-8 text-primary"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+                <h3
+                  class="text-2xl font-bold mb-4 text-brand-gold"
+                  data-i18n="company"
+                >
+Abdulilah Al-Owaydan Company
+                </h3>
+              </div>
+              <p
+                class="text-muted-foreground leading-relaxed mb-4"
+                data-i18n="footerDesc"
+              >
+Pioneers in providing workforce solutions for hotels, hospitals, and companies since 1999
+              </p>
+              <p class="text-sm text-muted-foreground" data-i18n="licenseLabel">
+License No: RLMA7603
+
+              </p>
+            </div>
+            <div>
+              <h4
+                class="text-lg font-semibold text-foreground mb-4"
+                data-i18n="quickLinks"
+              >
+                Quick Links
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <button
+                    onclick="navigateTo('home')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="home"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onclick="navigateTo('services')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="services"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onclick="navigateTo('about')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="about"
+                  >
+                    About Us
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onclick="navigateTo('contact')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="contact"
+                  >
+                    Contact Us
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4
+                class="text-lg font-semibold text-foreground mb-4"
+                data-i18n="services"
+              >
+                Our Services
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <button
+                    onclick="navigateTo('hotel')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="hotelServices"
+                  >
+                    Hotel Services
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onclick="navigateTo('healthcare')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="healthcareServices"
+                  >
+    Healthcare Services 
+                               </button>
+                </li>
+                <li>
+                  <button
+                    onclick="navigateTo('business-packages')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="businessPackages"
+                  >
+Business Packages
+                </button>
+                </li>
+                <li>
+                  <button
+                    onclick="navigateTo('services')"
+                    class="text-muted-foreground hover:text-primary transition-colors"
+                    data-i18n="allServices"
+                  >
+All Services
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4
+                class="text-lg font-semibold text-foreground mb-4"
+                data-i18n="contact"
+              >
+                Contact 
+              </h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" aria-hidden="true" class="lucide lucide-mail w-5 h-5 text-primary mt-0.5 flex-shrink-0"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                  <a
+                    href="mailto:ealowedan@ealowedan.com"
+                    class="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    ealowedan@ealowedan.com</a>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" aria-hidden="true" class="lucide lucide-phone w-5 h-5 text-primary mt-0.5 flex-shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                  <div class="space-y-1">
+                    <a
+                      href="tel:0112712070"
+                      class="text-muted-foreground hover:text-primary transition-colors block text-sm"
+                      >0112712070</a
+                    ><a
+                      href="tel:0552868570"
+                      class="text-muted-foreground hover:text-primary transition-colors block text-sm"
+                      >0552868570</a
+                    ><a
+                      href="tel:0505108761"
+                      class="text-muted-foreground hover:text-primary transition-colors block text-sm"
+                      >0505108761</a
+                    >
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-5 h-5 text-primary mt-0.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span
+                    class="text-muted-foreground text-sm"
+                    data-i18n="riyadh"
+                    >Riyadh, Kingdom of Saudi Arabia
+</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-8 border-t border-border">
+            <div
+              class="flex flex-col md:flex-row justify-between items-center gap-4"
+            >
+              <p
+                class="text-muted-foreground text-sm text-center md:text-right"
+              >
+                © <span id="currentYear"></span>
+                <span data-i18n="company">© 2026 Abdulilah Al-Owaydan Company. All rights reserved.</span>.
+                
+              </p>
+              <p
+                class="text-muted-foreground text-sm text-center md:text-left"
+                data-i18n="ministryLicense"
+              >
+                Licensed by the Ministry of Human Resources and Social Development
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>
