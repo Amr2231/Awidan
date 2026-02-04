@@ -116,7 +116,8 @@ const translations = {
     aboutStoryDesc: "We at Abdulilah Al-Owaydan Company specialize in providing high-quality workforce services to the hotel and hospitality sector. Founded in 1999, we have remained committed to supplying our clients with the best professionally skilled staff to help them deliver exceptional hospitality experiences to their guests.",
     yearsExperience: "Years Experience",
     partnerClinics: "Partner Clinics",
-    satisfactionRate: "Satisfaction",
+    satisfactionRate: "Satisfaction Rate",
+    CasesCompleted: "Cases Completed",
     legalTitle: "Legal Compliance & Employee Benefits",
     legalSubtitle: "We operate in full compliance with Saudi regulations to ensure legally secure and reliable workforce solutions.",
     residencyTitle: "Valid Residency Permits",
@@ -348,6 +349,7 @@ const translations = {
     yearsExperience: "سنوات الخبرة",
     partnerClinics: "شركاء النجاح",
     satisfactionRate: "نسبة الرضا",
+    CasesCompleted: "الحالات المكتملة", 
     legalTitle: "الامتثال القانوني ومزايا الموظفين",
     legalSubtitle: "نعمل وفقًا للأنظمة السعودية لضمان حلول قوى عاملة قانونية وآمنة وموثوقة.",
     residencyTitle: "إقامات نظامية",
@@ -513,28 +515,11 @@ function updateLanguageButton() {
   langBtns.forEach(btn => btn.textContent = text);
 }
 
-// ============================================
-// نظام الوضع الداكن المحسّن
-// ============================================
 
-let isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-function toggleDarkMode() {
-  isDarkMode = !isDarkMode;
-  localStorage.setItem('darkMode', isDarkMode);
-  applyDarkMode();
-}
 
-function applyDarkMode() {
-  document.documentElement.classList.toggle('dark', isDarkMode);
-  updateDarkModeButton();
-}
 
-function updateDarkModeButton() {
-  const darkBtn = document.getElementById('darkModeToggle');
-  if (!darkBtn) return;
-  darkBtn.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
-}
+
 
 // ============================================
 // نظام التنقل
@@ -723,7 +708,6 @@ function initContactForm() {
 function initApp() {
   // تطبيق الإعدادات المحفوظة
   switchLanguage(currentLang);
-  applyDarkMode();
   
   // تهيئة lucide
   if (typeof lucide !== 'undefined') {
@@ -744,11 +728,7 @@ function initApp() {
     }, { passive: true });
   }
   
-  const darkBtn = document.getElementById('darkModeToggle');
-  if (darkBtn) {
-    darkBtn.addEventListener('click', toggleDarkMode, { passive: true });
-    updateDarkModeButton();
-  }
+
   
   // تحديث السنة الحالية
   const currentYearElement = document.getElementById('currentYear');
