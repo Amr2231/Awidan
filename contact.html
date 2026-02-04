@@ -1,86 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>(function(){var d=localStorage.getItem('darkMode');if(d==='true')document.documentElement.classList.add('dark');})();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="input.css">
-    <link href="output.css" rel="stylesheet">
+    <title>Contact Us | Abdulilah Al-Owaydan – Workforce Solutions</title>
+    <meta name="description" content="Contact Abdulilah Al-Owaydan Company for workforce solutions. Riyadh, Saudi Arabia. Email, phone, location.">
+    <link rel="canonical" href="https://ealowedan.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+    <link rel="preload" as="image" href="./images/9.webp">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./theme.css">
 </head>
-<body>
-
-    <nav class="bg-white shadow-sm fixed w-full z-50">  
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <img src="/images/8-removebg-preview.png" alt="Zirkona Dental Lab Logo" class="w-full h-60" />
-                    </a>
-                </div>
-
-                <div class="hidden md:flex items-center space-x-8">
-                    <a data-i18n="home" href="index.html" class="text-gray-700 hover:text-brand-navy transition ">Home</a>
-                    <a data-i18n="about" href="about.html" class="text-gray-700 hover:text-brand-navy transition">About</a>
-                    <a data-i18n="services" href="services.html" class="text-gray-700 hover:text-brand-navy transition">Services</a>
-                    <a data-i18n="contact" href="contact.html" class="text-brand-gold hover:text-amber-700 transition">contact</a>
-                    <button id="langToggle" class="px-4 py-2 bg-brand-gold text-white rounded-lg hover:bg-brand-burgundy transition">
-        عربي
-    </button>
-                </div>
-
-                <button data-mobile-menu-toggle id="mobile-toggle"
-                    class="md:hidden flex items-center justify-center w-10 h-10 rounded-md  text-gray-700 hover:bg-gray-100 focus:outline-none transition">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+<body class="dm-body pt-16">
+    <header class="dm-nav fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="navbar-inner">
+            <a href="index.html" class="flex items-center shrink-0">
+              <img src="./images/8-removebg-preview.webp" alt="Abdulilah Al-Owaydan" width="230" height="0" >
+            </a>
+            <nav class="nav-links">
+                <a data-i18n="home" href="index.html">Home</a>
+                <a data-i18n="about" href="about.html">About</a>
+                <a data-i18n="services" href="services.html">Services</a>
+                <a data-i18n="contact" href="contact.html" class="nav-active">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="langToggle" type="button" class="btn-lang">عربي</button>
+                <button id="mobile-toggle" type="button" class="nav-mobile-btn" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
             </div>
         </div>
-
-        <div id="mobile-menu" data-mobile-menu class="md:hidden hidden bg-white border-t border-gray-200 shadow-md ">
-            <div class="flex flex-col space-y-3 py-4 px-6">
-                    <a href="index.html" class="text-brand-gold hover:text-brand-navy transition ">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-brand-navy transition">About</a>
-                    <a href="services.html" class="text-gray-700 hover:text-brand-navy transition">Services</a>
-                    <a href="contact.html" class="text-brand-gold hover:text-amber-700 transition">contact</a>
-                                        <button id="langToggle" class="px-4 py-2 bg-brand-gold text-white rounded-lg hover:bg-brand-burgundy transition">
-        عربي
-    </button>
-            </div>
+        <div id="mobile-menu" class="nav-menu" aria-hidden="true">
+            <a data-i18n="home" href="index.html">Home</a>
+            <a data-i18n="about" href="about.html">About</a>
+            <a data-i18n="services" href="services.html">Services</a>
+            <a data-i18n="contact" href="contact.html">Contact</a>
         </div>
-    </nav>    
+    </header>    
         <!-- Hero Section with Breadcrumb -->
-    <div class="relative bg-black/90 text-white py-24 ">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0 bg-center bg-cover bg-fixed" style="background-image: url('/images/9.jpg');"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center">
-                <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
-                    <ol class="inline-flex items-center space-x-2">
-                        <li class="inline-flex items-center">
-                            <a href="index.html" class="text-brand-gold hover:text-white transition">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="flex items-center">
-                                <svg class="w-6 h-6 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span data-i18n="contact" class="ml-2 text-white font-medium">Contact</span>
-                            </div>
-                        </li>
-                    </ol>
-                </nav>
-                <h1 data-i18n="contactUs" class="text-5xl md:text-6xl font-bold mb-4">Contact Us</h1>
-                <p data-i18n="contactSubtitle" class="text-xl text-gray-200 max-w-2xl mx-auto">We are here to serve you</p>
+<!-- Contact Hero (LCP Optimized) -->
+<section class="relative min-h-[420px] flex items-center overflow-hidden text-white">
+
+  <!-- LCP Image -->
+  <img
+    src="./images/9.webp"
+    alt=""
+    width="1600"
+    height="900"
+    fetchpriority="high"
+    decoding="async"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/80"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center">
+
+      <!-- Breadcrumb -->
+      <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-2">
+          <li class="inline-flex items-center">
+            <a href="index.html" class="text-brand-gold hover:text-white transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span data-i18n="contact" class="ml-2 font-medium">
+                Contact
+              </span>
             </div>
-        </div>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Title -->
+      <h1
+        data-i18n="contactUs"
+        class="text-5xl md:text-6xl font-bold mb-4 leading-tight"
+      >
+        Contact Us
+      </h1>
+
+      <!-- Subtitle -->
+      <p
+        data-i18n="contactSubtitle"
+        class="text-xl text-gray-200 max-w-2xl mx-auto"
+      >
+        We are here to serve you
+      </p>
+
     </div>
+  </div>
+</section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-white to-brand-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -212,189 +245,111 @@
         </div>
     </section>
         <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"
-          >
-            <div>
-              <div class="flex items-center gap-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="building-2" aria-hidden="true" class="lucide lucide-building-2 w-8 h-8 text-primary"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
-                <h3
-                  class="text-2xl font-bold mb-4 text-brand-gold"
-                  data-i18n="company"
-                >
-Abdulilah Al-Owaydan Company
-                </h3>
-              </div>
-              <p
-                class="text-muted-foreground leading-relaxed mb-4"
-                data-i18n="footerDesc"
-              >
-Pioneers in providing workforce solutions for hotels, hospitals, and companies since 1999
-              </p>
-              <p class="text-sm text-muted-foreground" data-i18n="licenseLabel">
-License No: RLMA7603
+<footer class="text-gray-300" style="background-color: var(--dm-footer);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
 
-              </p>
-            </div>
-            <div>
-              <h4
-                class="text-lg font-semibold text-foreground mb-4"
-                data-i18n="quickLinks"
-              >
-                Quick Links
-              </h4>
-              <ul class="space-y-2">
-                <li>
-                  <button
-                    onclick="navigateTo('home')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="home"
-                  >
-                    Home
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onclick="navigateTo('services')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="services"
-                  >
-                    Services
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onclick="navigateTo('about')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="about"
-                  >
-                    About Us
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onclick="navigateTo('contact')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="contact"
-                  >
-                    Contact Us
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4
-                class="text-lg font-semibold text-foreground mb-4"
-                data-i18n="services"
-              >
-                Our Services
-              </h4>
-              <ul class="space-y-2">
-                <li>
-                  <button
-                    onclick="navigateTo('hotel')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="hotelServices"
-                  >
-                    Hotel Services
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onclick="navigateTo('healthcare')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="healthcareServices"
-                  >
-    Healthcare Services 
-                               </button>
-                </li>
-                <li>
-                  <button
-                    onclick="navigateTo('business-packages')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="businessPackages"
-                  >
-Business Packages
-                </button>
-                </li>
-                <li>
-                  <button
-                    onclick="navigateTo('services')"
-                    class="text-muted-foreground hover:text-primary transition-colors"
-                    data-i18n="allServices"
-                  >
-All Services
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4
-                class="text-lg font-semibold text-foreground mb-4"
-                data-i18n="contact"
-              >
-                Contact 
-              </h4>
-              <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" aria-hidden="true" class="lucide lucide-mail w-5 h-5 text-primary mt-0.5 flex-shrink-0"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-                  <a
-                    href="mailto:ealowedan@ealowedan.com"
-                    class="text-muted-foreground hover:text-primary transition-colors text-sm">
-                    ealowedan@ealowedan.com</a>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" aria-hidden="true" class="lucide lucide-phone w-5 h-5 text-primary mt-0.5 flex-shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-                  <div class="space-y-1">
-                    <a
-                      href="tel:0112712070"
-                      class="text-muted-foreground hover:text-primary transition-colors block text-sm"
-                      >0112712070</a
-                    ><a
-                      href="tel:0552868570"
-                      class="text-muted-foreground hover:text-primary transition-colors block text-sm"
-                      >0552868570</a
-                    ><a
-                      href="tel:0505108761"
-                      class="text-muted-foreground hover:text-primary transition-colors block text-sm"
-                      >0505108761</a
-                    >
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-5 h-5 text-primary mt-0.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span
-                    class="text-muted-foreground text-sm"
-                    data-i18n="riyadh"
-                    >Riyadh, Kingdom of Saudi Arabia
-</span
-                  >
-                </li>
-              </ul>
-            </div>
+    <!-- Top -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+      <!-- Company -->
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-11 h-11 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+              <path d="M10 12h4M10 8h4" />
+              <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+            </svg>
           </div>
-          <div class="pt-8 border-t border-border">
-            <div
-              class="flex flex-col md:flex-row justify-between items-center gap-4"
-            >
-              <p
-                class="text-muted-foreground text-sm text-center md:text-right"
-              >
-                © <span id="currentYear"></span>
-                <span data-i18n="company">© 2026 Abdulilah Al-Owaydan Company. All rights reserved.</span>.
-                
-              </p>
-              <p
-                class="text-muted-foreground text-sm text-center md:text-left"
-                data-i18n="ministryLicense"
-              >
-                Licensed by the Ministry of Human Resources and Social Development
-              </p>
-            </div>
-          </div>
+          <h3 data-i18n="company" class="text-xl font-bold text-white">
+            Abdulilah Al-Owaydan Company
+          </h3>
         </div>
-    </footer>
+
+        <p data-i18n="footerDesc" class="text-sm leading-relaxed text-gray-400 mb-4">
+          Pioneers in providing workforce solutions for hotels, hospitals,
+          and companies since 1999.
+        </p>
+
+        <p data-i18n="licenseLabel" class="text-sm text-gray-500">
+          License No: <span class="text-gray-300">RLMA7603</span>
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 data-i18n="quickLinks" class="text-lg font-semibold text-white mb-5">Quick Links</h4>
+        <ul class="space-y-3">
+          <li><button data-i18n="home" onclick="navigateTo('home')" class="hover:text-brand-gold transition">Home</button></li>
+          <li><button data-i18n="services" onclick="navigateTo('services')" class="hover:text-brand-gold transition">Services</button></li>
+          <li><button data-i18n="about" onclick="navigateTo('about')" class="hover:text-brand-gold transition">About Us</button></li>
+          <li><button data-i18n="contact" onclick="navigateTo('contact')" class="hover:text-brand-gold transition">Contact Us</button></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 data-i18n="OurServices" class="text-lg font-semibold text-white mb-5">Our Services</h4>
+        <ul class="space-y-3">
+          <li><button data-i18n="hotalServices" onclick="navigateTo('hotel')" class="hover:text-brand-gold transition">Hotel Services</button></li>
+          <li><button data-i18n="HealthcareServices" onclick="navigateTo('healthcare')" class="hover:text-brand-gold transition">Healthcare Services</button></li>
+          <li><button data-i18n="businessPackages" onclick="navigateTo('business-packages')" class="hover:text-brand-gold transition">Business Packages</button></li>
+          <li><button data-i18n="allServices" onclick="navigateTo('services')" class="hover:text-brand-gold transition">All Services</button></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 data-i18n="contactTitle" class="text-lg font-semibold text-white mb-5">Contact</h4>
+        <ul class="space-y-4 text-sm">
+
+          <li class="flex gap-3">
+            <svg aria-hidden="true" class="w-5 h-5 text-brand-gold mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+            <a href="mailto:ealowedan@ealowedan.com" class="hover:text-brand-gold transition">
+              ealowedan@ealowedan.com
+            </a>
+          </li>
+
+          <li class="flex gap-3">
+            <svg aria-hidden="true" class="w-5 h-5 text-brand-gold mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.23.9l-2.27 2.27a16 16 0 0 0 6.06 6.06l2.27-2.27a1 1 0 0 1 .9-.23l4 1a1 1 0 0 1 .75 1z"/>
+            </svg>
+            <div class="space-y-1">
+              <a href="tel:0112712070" class="block hover:text-brand-gold">0112712070</a>
+              <a href="tel:0552868570" class="block hover:text-brand-gold">0552868570</a>
+              <a href="tel:0505108761" class="block hover:text-brand-gold">0505108761</a>
+            </div>
+          </li>
+
+          <li class="flex gap-3">
+            <svg aria-hidden="true" class="w-5 h-5 text-brand-gold mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s8-4.5 8-11a8 8 0 0 0-16 0c0 6.5 8 11 8 11z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span data-i18n="riyadh">Riyadh, Kingdom of Saudi Arabia</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div  class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+      <p data-i18n="rightsReserved" class="text-center md:text-right">
+        © <span id="currentYear"></span> Abdulilah Al-Owaydan Company.
+        All rights reserved.
+      </p>
+      <p data-i18n="ministryLicense" class="text-center md:text-left">
+        Licensed by the Ministry of Human Resources and Social Development
+      </p>
+    </div>
+
+  </div>
+</footer>
     <script src="main.js"></script>
 
 </body>

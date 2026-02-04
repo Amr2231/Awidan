@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <script>(function(){var d=localStorage.getItem('darkMode');if(d==='true')document.documentElement.classList.add('dark');})();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Zirkona - Premium Dental Laboratory</title>
+    <title>About Us | Abdulilah Al-Owaydan – Workforce Solutions</title>
+    <meta name="description" content="Learn about Abdulilah Al-Owaydan Company – workforce solutions for hotels and hospitality since 1999. Riyadh, Saudi Arabia.">
+    <link rel="canonical" href="https://ealowedan.com/about.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+    <link rel="preload" as="image" href="./images/9.webp">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./theme.css">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
         
         body {
             font-family: 'Inter', sans-serif;
@@ -62,81 +73,59 @@
     </style>
 </head>
 
-<body class="bg-brand-cream">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm fixed w-full z-50">  
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <img src="/images/8-removebg-preview.png" alt="Zirkona Dental Lab Logo" class="w-full h-60" />
-                    </a>
-                </div>
-
-                <div class="hidden md:flex items-center space-x-8">
-                    <a data-i18n="home" href="index.html" class="text-gray-700 hover:text-brand-navy transition ">Home</a>
-                    <a data-i18n="about" href="about.html" class="text-brand-gold hover:text-amber-700 transition">About</a>
-                    <a data-i18n="services" href="services.html" class="text-gray-700 hover:text-brand-navy transition">Services</a>
-                    <a data-i18n="contact" href="contact.html" class="text-gray-700 hover:text-brand-navy transition">contact</a>
-                    <button id="langToggle" class="px-4 py-2 bg-brand-gold text-white rounded-lg hover:bg-brand-burgundy transition">
-        عربي
-    </button>
-                </div>
-
-                <button data-mobile-menu-toggle id="mobile-toggle"
-                    class="md:hidden flex items-center justify-center w-10 h-10 rounded-md  text-gray-700 hover:bg-gray-100 focus:outline-none transition">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+<body class="dm-body pt-16">
+    <header class="dm-nav fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="navbar-inner">
+            <a href="index.html" class="flex items-center shrink-0">
+              <img src="./images/8-removebg-preview.webp" alt="Abdulilah Al-Owaydan" width="230" height="0" >
+            </a>
+            <nav class="nav-links">
+                <a data-i18n="home" href="index.html">Home</a>
+                <a data-i18n="about" href="about.html" class="nav-active">About</a>
+                <a data-i18n="services" href="services.html">Services</a>
+                <a data-i18n="contact" href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="langToggle" type="button" class="btn-lang">عربي</button>
+                <button id="mobile-toggle" type="button" class="nav-mobile-btn" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
             </div>
         </div>
-
-        <div id="mobile-menu" data-mobile-menu class="md:hidden hidden bg-white border-t border-gray-200 shadow-md ">
-            <div class="flex flex-col space-y-3 py-4 px-6">
-                    <a href="index.html" class="text-brand-gold hover:text-brand-navy transition ">Home</a>
-                    <a href="about.html" class="text-brand-gold hover:text-amber-700 transition">About</a>
-                    <a href="services.html" class="text-gray-700 hover:text-brand-navy transition">Services</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-brand-navy transition">contact</a>
-                                        <button id="langToggle" class="px-4 py-2 bg-brand-gold text-white rounded-lg hover:bg-brand-burgundy transition">
-        عربي
-    </button>
-            </div>
+        <div id="mobile-menu" class="nav-menu" aria-hidden="true">
+            <a data-i18n="home" href="index.html">Home</a>
+            <a data-i18n="about" href="about.html">About</a>
+            <a data-i18n="services" href="services.html">Services</a>
+            <a data-i18n="contact" href="contact.html">Contact</a>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section with Breadcrumb -->
-    <div class="relative bg-black/90 text-white py-24 ">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0 bg-center bg-cover bg-fixed" style="background-image: url('/images/9.jpg');"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center">
-                <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
-                    <ol class="inline-flex items-center space-x-2">
-                        <li class="inline-flex items-center">
-                            <a href="index.html" class="text-brand-gold hover:text-white transition">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="flex items-center">
-                                <svg class="w-6 h-6 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span data-i18n="about" class="ml-2 text-white font-medium">About Us</span>
-                            </div>
-                        </li>
-                    </ol>
-                </nav>
-                <h1 data-i18n="aboutCompany" class="text-5xl md:text-6xl font-bold mb-4">About Company</h1>
-                <p data-i18n="aboutHeroDesc" class="text-xl text-gray-200 max-w-2xl mx-auto">Learn about Abdulilah Al-Owaydan Company</p>
-            </div>
-        </div>
-    </div>
+<section class="relative min-h-[420px] bg-black flex items-center overflow-hidden">
+  <!-- LCP IMAGE -->
+  <img
+    src="/images/9.webp"
+    alt=""
+    fetchpriority="high"
+    decoding="async"
+    width="1920"
+    height="1080"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
+    <h1 data-i18n="aboutCompany" class="text-5xl md:text-6xl font-bold mb-4">
+      About Company
+    </h1>
+    <p data-i18n="aboutHeroDesc" class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+      Learn about Abdulilah Al-Owaydan Company
+    </p>
+  </div>
+</section>
+
+
 
     <!-- Main About Section -->
     <main class="py-20 bg-gradient-to-br from-brand-cream via-white to-brand-cream">
@@ -190,8 +179,8 @@ guests
                     </div>
 
                     <div class="flex flex-wrap gap-4 pt-4 stagger-4">
-                        <a href="appointment.html" class="inline-flex items-center bg-gradient-to-r from-brand-gold to-brand-green text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                            Make an Appointment
+                        <a href="contact.html" class="inline-flex items-center bg-gradient-to-r from-brand-gold to-brand-green text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            Contact Us
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
@@ -208,8 +197,7 @@ guests
                         <!-- Large Top Image -->
                         <div class="col-span-2 relative group">
                             <div class="rounded-3xl h-80 overflow-hidden shadow-2xl relative border-4 border-white image-hover">
-                                <img src="/images/011.png" alt="Zirkona Laboratory" class="w-full object-top h-full object-cover" />
-                                <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="/images/011.webp" alt="Zirkona Laboratory" class="" loading="lazy" decoding="async" width="800" height="600" />
                             </div>
                             <!-- Floating Badge -->
                             <div class="absolute -top-4 -right-4 bg-brand-gold text-white px-6 py-3 rounded-full shadow-xl transform rotate-12 hover:rotate-0 transition-transform duration-300">
@@ -223,15 +211,13 @@ guests
                         <!-- Bottom Two Images -->
                         <div class="relative group">
                             <div class="rounded-3xl h-72 overflow-hidden shadow-2xl relative border-4 border-white image-hover">
-                                <img src="/images/04.png" alt="Advanced Technology in zirkona" class="w-full h-full object-cover" />
-                                <div class="absolute inset-0 bg-gradient-to-t from-brand-green/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="/images/04.webp" alt="Advanced Technology in zirkona" loading="lazy" decoding="async" width="800" height="600"  />
                             </div>
                         </div>
 
                         <div class="relative group">
                             <div class="rounded-3xl h-72 overflow-hidden shadow-2xl relative border-4 border-white image-hover">
-                                <img src="/images/03.jpg" alt="Expert Team in zirkona with the best technology" class="w-full h-full object-cover" />
-                                <div class="absolute inset-0 bg-gradient-to-t from-brand-burgundy/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="/images/03.webp" alt="Expert Team in zirkona with the best technology" loading="lazy" decoding="async" width="800" height="600"  />
                             </div>
                         </div>
                     </div>
@@ -375,29 +361,56 @@ guests
 
 
     <!-- CTA Section -->
-    <section class="py-20 bg-black/90 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0" style="background-image: url('/images/5.jpg');"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center text-white">
-                <h2 data-i18n="ctaTitle" class="text-4xl md:text-5xl font-bold mb-6">Ready to Work With a Trusted Workforce Partner?</h2>
-                <p data-i18n="ctaDesc" class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                    We provide reliable, fully compliant, and professionally trained workforce
+<!-- CTA Section (LCP Optimized) -->
+<section
+  class="relative bg-black/90 overflow-hidden py-20 min-h-[420px] flex items-center"
+  style="background-image: url('/images/5.webp'); background-size: cover; background-position: center;"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center text-white">
+
+      <!-- LCP ELEMENT -->
+      <h2
+        data-i18n="ctaTitle"
+        class="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+      >
+        Ready to Work With a Trusted Workforce Partner?
+      </h2>
+
+      <p
+        data-i18n="ctaDesc"
+        class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed"
+      >
+        We provide reliable, fully compliant, and professionally trained workforce
         solutions tailored to hotels, healthcare facilities, and businesses across
         the Kingdom.
-                </p>
-                <div class="flex flex-wrap gap-4 justify-center">
-                    <a data-i18n="getStarted" href="appointment.html" class="bg-brand-gold hover:bg-brand-burgundy text-white px-10 py-4 rounded-full font-semibold shadow-xl transform hover:scale-105 transition-all duration-300">
-                        Get Started Today
-                    </a>
-                    <a data-i18n="viewServices" href="index.html#services" class="bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300">
-                        View Services
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+      </p>
+
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a
+          data-i18n="getStarted"
+          href="appointment.html"
+          class="bg-brand-gold hover:bg-brand-burgundy text-white px-10 py-4 rounded-full font-semibold shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          Get Started Today
+        </a>
+
+        <a
+          data-i18n="viewServices"
+          href="#services"
+          class="bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
+        >
+          View Services
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-gray-300">
